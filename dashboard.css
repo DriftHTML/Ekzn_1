@@ -1,27 +1,4 @@
 /* Оформление главной страницы */
-main {
-    height: calc(100vh - 52px);
-    margin-left: 200px;
-    padding: 20px;
-    overflow-y: auto;
-}
-.hidden-menu {
-    display: flex;
-    margin-bottom: 50px;
-}
-.button-menu {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
-.button-menu img {
-    height: 20px;
-}
-main h3 {
-    text-transform: capitalize;
-}
 .cards-info, .cards-statistic, .cards-task {
     display: grid;
     gap: 15px;
@@ -32,7 +9,6 @@ main h3 {
 }
 .info {
     position: relative;
-    /* min-width: 178.5px; */
     background-color: white;
     padding: 15px 15px;
     box-shadow: 3px 3px 10px grey;
@@ -51,9 +27,6 @@ main h3 {
     text-align: right;
     color: dimgrey;
     font-size: 22px;
-    margin-bottom: 10px;
-}
-hr {
     margin-bottom: 10px;
 }
 .info p:nth-of-type(3) {
@@ -102,7 +75,6 @@ hr {
 }
 .statistic {
     position: relative;
-    /* min-width: 240px; */
     background-color: white;
     padding: 150px 15px 15px;
     box-shadow: 3px 3px 10px grey;
@@ -140,9 +112,6 @@ hr {
     font-size: 14px;
     margin-bottom: 10px;
 }
-hr {
-    margin-bottom: 10px;
-}
 .statistic p:nth-of-type(3) {
     display: flex;
     align-items: center;
@@ -163,7 +132,6 @@ hr {
 }
 .task, .stats {
     position: relative;
-    /* min-width: 370px; */
     background-color: white;
     box-shadow: 3px 3px 10px grey;
 }
@@ -173,7 +141,6 @@ hr {
 .task-menu, .stats-menu {
     position: absolute;
     width: calc(100% - 30px);
-    /* height: 55px; */
     left: 15px;
     top: -15px;
     border-radius: 5px;
@@ -183,11 +150,6 @@ hr {
 .task-menu {
     height: 55px;
 }
-/* .task-menu-title {
-    display: flex;
-    align-items: center;
-    color: white;
-} */
 .image-task-menu {
     background-color: orange;
     display: flex;
@@ -213,7 +175,6 @@ hr {
 .image-task-menu img {
     margin-right: 5px;
     height: 15px;
-    /* vertical-align: middle; */
 }
 .task-list-row, .stats-list-row {
     display: grid;
@@ -244,7 +205,6 @@ hr {
     background-color: steelblue;
     text-transform: capitalize;
     color: white;
-    /* font-size: 14px; */
 }
 .image-stat-menu p {
     margin: 10px 0;
@@ -256,12 +216,6 @@ hr {
     grid-template-columns: 50px 2fr 1fr 1fr;
     padding: 10px 0;
 }
-/* .task-list-row {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid grey;
-    padding: 10px 0;
-} */
 
 /* Адаптация */
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -311,7 +265,7 @@ hr {
         height: 100px;
     }
 }
-@media screen and (min-width: 500px) and (max-width: 649px) {
+@media screen and (min-width: 501px) and (max-width: 649px) {
     .cards-info {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,auto);

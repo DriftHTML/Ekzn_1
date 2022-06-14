@@ -8,6 +8,31 @@ body {
     background-color: #E7E7E7;
 }
 
+/* Общие параметры главной страницы */
+main {
+    height: calc(100vh - 52px);
+    margin-left: 200px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.hidden-menu {
+    display: flex;
+    margin-bottom: 50px;
+}
+.button-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button-menu img {
+    height: 20px;
+}
+main h3 {
+    text-transform: capitalize;
+}
+
 /* Оформление главного меню */
 .menu {
     height: 100vh;
@@ -51,7 +76,7 @@ nav > ul > li > a img {
 /* Подсветка пункта при наведении */
 nav > ul > li a:hover {
     color: black;
-    background-color: rgba(30, 143, 255, 0.2);
+    background-color: rgba(220, 20, 60, 0.2);
 }
 
 /* Активный пункт */
@@ -64,7 +89,10 @@ nav > ul > li.active a:hover {
     cursor: default;
 }
 
-/* FOOTER */
+/* Оформление FOOTER */
+hr {
+    margin-bottom: 10px;
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -88,5 +116,10 @@ footer > div > ul a:hover {
 @media screen and (max-width: 799px) {
     footer {
         margin-left: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    footer {
+        font-size: 12px;
     }
 }
