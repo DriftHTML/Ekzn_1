@@ -85,7 +85,7 @@ footer > div > ul a {
 footer > div > ul a:hover {
     text-decoration: underline;
 }
-@media screen and (min-width: 650px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
     footer {
         margin-left: 0;
     }

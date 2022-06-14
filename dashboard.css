@@ -5,8 +5,21 @@ main {
     padding: 20px;
     overflow-y: auto;
 }
-main h3 {
+.hidden-menu {
+    display: flex;
     margin-bottom: 50px;
+}
+.button-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button-menu img {
+    height: 20px;
+}
+main h3 {
     text-transform: capitalize;
 }
 .cards-info, .cards-statistic, .cards-task {
@@ -269,13 +282,18 @@ hr {
         height: 100px;
     }
 }
-@media screen and (min-width: 650px) and (max-width: 799px) {
+@media screen and (max-width: 799px) {
     .menu {
         display: none;
     }
     main {
         margin-left: 0;
     }
+    .button-menu {
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 799px) {
     .cards-info {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,auto);
@@ -291,5 +309,51 @@ hr {
     }
     .table-graph {
         height: 100px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 649px) {
+    .cards-info {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        row-gap: 50px;
+    }
+    .cards-task {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+    }
+    .cards-statistic {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        row-gap: 50px;
+    }
+    .statistic {
+        padding: 250px 15px 15px;
+    }
+    .table-graph {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cards-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        row-gap: 50px;
+    }
+    .cards-task {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+    }
+    .cards-statistic {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        row-gap: 50px;
+    }
+    .statistic {
+        padding: 200px 15px 15px;
+    }
+    .table-graph {
+        height: 200px;
     }
 }
