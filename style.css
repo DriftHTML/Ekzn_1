@@ -80,7 +80,7 @@ nav > ul > li a:hover {
     transition-duration: 0.8s;
 }
 
-/* Активный пункт */
+/* Активный пункт меню */
 nav > ul > li.active a {
     color: white;
     background-color: crimson;
@@ -139,7 +139,5 @@ footer > div > ul a:hover {
         transition-duration: 0.5s;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
-        /* margin-bottom: 10px; */
     }
 }

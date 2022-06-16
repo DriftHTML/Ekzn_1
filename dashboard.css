@@ -17,18 +17,22 @@
     margin: 0;
     transition-duration: 1s;
 }
+.info hr {
+    margin-bottom: 10px;
+}
 .info p:nth-of-type(1) {
     text-transform: capitalize;
     text-align: right;
     color: dimgrey;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 .info p:nth-of-type(2) {
     text-transform: uppercase;
     text-align: right;
     color: dimgrey;
-    font-size: 22px;
+    font-size: 28px;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 .info p:nth-of-type(3) {
@@ -105,7 +109,7 @@
     border-radius: 5px;
     background-image: url(pic/graphics.svg);
     background-repeat: no-repeat;
-    background-size: 90% 70%;
+    background-size: 90% 80%;
     background-position: 50% 50%;
     box-shadow: 2px 2px 3px grey;
 }
@@ -247,7 +251,7 @@
     .cards-info {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,auto);
-        row-gap: 30px;
+        row-gap: 50px;
     }
     .cards-task {
         grid-template-columns: 1fr;
@@ -261,6 +265,9 @@
     }
     .table-graph {
         height: 130px;
+    }
+    .table-graph {
+        background-size: 90% 60%;
     }
 }
 @media screen and (max-width: 799px) {
@@ -286,7 +293,7 @@
     .cards-statistic {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,auto);
-        row-gap: 30px;
+        row-gap: 50px;
     }
 }
 @media screen and (min-width: 501px) and (max-width: 649px) {
@@ -295,14 +302,14 @@
     }
     .table-graph {
         height: 200px;
-        background-size: 80% 70%;
+        background-size: 80% 95%;
     }
 }
 @media screen and (max-width: 500px) {
     .cards-info {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,auto);
-        row-gap: 30px;
+        row-gap: 50px;
     }
     .statistic {
         padding: 150px 15px 15px;
@@ -331,9 +338,12 @@
         font-size: 13px;
     }
     .image-stat-menu p:last-child {
-        font-size: 12px;
+        font-size: 14px;
     }
     .task-list-row label {
         font-size: 14px;
+    }
+    .task-list-row img {
+        margin: 0 5px;
     }
 }
