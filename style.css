@@ -73,16 +73,16 @@ nav > ul > li > a img {
     width: 20px;
 }
 
-/* Подсветка пункта при наведении */
+/* Подсветка пункта меню при наведении */
 nav > ul > li a:hover {
     color: black;
     background-color: rgba(220, 20, 60, 0.2);
+    transition-duration: 0.8s;
 }
 
 /* Активный пункт */
-nav > ul > li.active a,
-nav > ul > li.active a:hover {
-    color:white;
+nav > ul > li.active a {
+    color: white;
     background-color: crimson;
 }
 nav > ul > li.active a:hover {
@@ -91,27 +91,39 @@ nav > ul > li.active a:hover {
 
 /* Оформление FOOTER */
 hr {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
     margin-left: 200px;
     padding: 0 20px;
+    color: dimgrey;
 }
 footer > div > ul {
     display: flex;
     list-style: none;
 }
 footer > div > ul a {
-    margin: 0 10px;
+    margin-right: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: dimgrey;
     font-weight: bold;
+}
+footer > div > ul > li:last-child a {
+    margin-right: 0;
 }
 footer > div > ul a:hover {
     text-decoration: underline;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    main {
+        transition-duration: 0.5s;
+    }
 }
 @media screen and (max-width: 799px) {
     footer {
@@ -119,7 +131,15 @@ footer > div > ul a:hover {
     }
 }
 @media screen and (max-width: 500px) {
+    main {
+        height: calc(100vh - 60px);
+    }
     footer {
-        font-size: 12px;
+        font-size: 14px;
+        transition-duration: 0.5s;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        /* margin-bottom: 10px; */
     }
 }
