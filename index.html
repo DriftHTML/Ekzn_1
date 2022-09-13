@@ -6,177 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <div class="menu">
-        <h3>company</h3>
-        <hr>
-        <nav>
-            <ul>
-                <li class="active">
-                    <a href="index.html"><img src="pic/dashboard_white.svg" alt="DASHBOARD">dashboard</a>
-                </li>
-                <li>
-                    <a href="user_profile/UserProfile.html"><img src="pic/account_gray.svg" alt="ACCOUNT">user profile</a>
-                </li>
-                <li>
-                    <a href="#"><img src="pic/map_gray.svg" alt="MAPS">maps</a>
-                </li>
-                <li>
-                    <a href="#"><img src="pic/notify_gray.svg" alt="NOTIFICATIONS">notifications</a>
-                </li>
-                <li>
-                    <a href="#"><img src="pic/support_gray.svg" alt="SUPPORT">support</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="start">
+        <div class="logo">
+            <img src="pic/logoType.png" alt="LOGO">
+        </div>
+        <button class="start-game">начать выигрывать миллион!!!</button>
+    </div>
+    <div class="end">
+        <div class="end-messange">
+            <p id="end-text">Oppps!!! Вы проиграли</p>
+            <button id="restart">Повторить попытку</button>
+        </div>
     </div>
     <main>
-        <div class="hidden-menu">
-            <button class="button-menu"><img src="pic/menu.png" alt="MENU"></button>
-            <h3>dashboard</h3>
-        </div>
-        <div class="cards-info">
-            <div class="info card-info-one">
-                <div class="table-image image-data"></div>        <!-- Выступающая картинка Карточки №1 (position: absolute) -->
-                <p>used space</p>
-                <p>49/50 gb</p>
-                <hr>
-                <p><img src="pic/alert.png" alt="ALERT">Get more space...</p>
+        <div class="game">
+            <div class="help">
+                <div class="five-five"></div>
+                <div class="call help-remove"></div>
+                <div class="hall-help"></div>
             </div>
-            <div class="info card-info-two">
-                <div class="table-image image-shop"></div>        <!-- Выступающая картинка Карточки №2 (position: absolute) -->
-                <p>revenue</p>
-                <p>$ 34,245</p>
-                <hr>
-                <p><img src="pic/calendar.png" alt="CALENDAR">Last 24 Horse</p>
+            <div class="times">
+                <p id="times_ss">60</p>
             </div>
-            <div class="info card-info-three">
-                <div class="table-image image-tag"></div>        <!-- Выступающая картинка Карточки №3 (position: absolute) -->
-                <p>fixed issues</p>
-                <p>75</p>
-                <hr>
-                <p><img src="pic/down.png" alt="DOWNLOAD">Traked from Github</p>
-            </div>
-            <div class="info card-info-four">
-                <div class="table-image image-paperplane"></div>        <!-- Выступающая картинка Карточки №4 (position: absolute) -->
-                <p>followers</p>
-                <p>+ 245</p>
-                <hr>
-                <p><img src="pic/time.png" alt="TIME">Just updated</p>
-            </div>
-        </div>
-        <div class="cards-statistic">
-            <div class="statistic">
-                <div class="table-graph image-sales"></div>        <!-- Выступающая картинка Карточки №1 (position: absolute) -->
-                <p>daily sales</p>
-                <p>55% increase in today sales</p>
-                <hr>
-                <p><img src="pic/time.png" alt="TIME">updated 4 minutes ago</p>
-            </div>
-            <div class="statistic">
-                <div class="table-graph image-subscribe"></div>        <!-- Выступающая картинка Карточки №2 (position: absolute) -->
-                <p>email subscriptions</p>
-                <p>Last Campaign Performance</p>
-                <hr>
-                <p><img src="pic/time.png" alt="TIME">campaign sent 2 days ago</p>
-            </div>
-            <div class="statistic">
-                <div class="table-graph image-task-final"></div>        <!-- Выступающая картинка Карточки №3 (position: absolute) -->
-                <p>completed tasks</p>
-                <p>Last Campaign Performance</p>
-                <hr>
-                <p><img src="pic/time.png" alt="TIME">campaign event 2 days ago</p>
-            </div>
-        </div>
-        <div class="cards-task">
-            <div class="task">
-                <div class="task-menu image-task-menu">        <!-- Выступающая картинка Карточки №1 (position: absolute) -->
-                    <p>Tasks:</p>
-                    <button><img src="pic/bug.svg" alt="BUGS">Bugs</button>
-                    <button><img src="pic/web.svg" alt="WEB">Website</button>
-                    <button><img src="pic/cloud.svg" alt="CLOUD">Server</button>
+            <div class="question-title">
+                <div class="question">
+                    <p>Вопрос</p>
                 </div>
-                <form action="">
-                    <ul class="task-list">
-                        <li class="task-list-row">
-                            <div><input type="checkbox" id="list-box-1" checked></div>
-                            <div><label for="list-box-1">Sign contract for "What are conference organizers afraid of?"</label></div>
-                            <div><img src="pic/edit.png" alt=""></div>
-                            <div><img src="pic/remove.png" alt=""></div>
-                        </li>
-                        <li class="task-list-row">
-                            <div><input type="checkbox" id="list-box-2"></div>
-                            <div><label for="list-box-2">Lines From Great Russian Literature? Or E-mails From My Boss?</label></div>
-                            <div><img src="pic/edit.png" alt=""></div>
-                            <div><img src="pic/remove.png" alt=""></div>
-                        </li>
-                        <li class="task-list-row">
-                            <div><input type="checkbox" id="list-box-3"></div>
-                            <div><label for="list-box-3">Sign contract for "What are conference organizers afraid of"?</label></div>
-                            <div><img src="pic/edit.png" alt=""></div>
-                            <div><img src="pic/remove.png" alt=""></div>
-                        </li>
-                        <li class="task-list-row">
-                            <div><input type="checkbox" id="list-box-4" checked></div>
-                            <div><label for="list-box-4">Sign contract for "What are conference organizers afraid of"?</label></div>
-                            <div><img src="pic/edit.png" alt=""></div>
-                            <div><img src="pic/remove.png" alt=""></div>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div class="stats">
-                <div class="stats-menu image-stat-menu">        <!-- Выступающая картинка Карточки №2 (position: absolute) -->
-                    <p>employees stats</p>
-                    <p>New employees on 19th September, 2019</p>
+                <div class="answer-one">
+                    <p>Ответ 1</p>
                 </div>
-                    <ul class="stats-list">
-                        <li class="stats-list-row">
-                            <div><p>ID</p></div>
-                            <div><p>Name</p></div>
-                            <div><p>Salary</p></div>
-                            <div><p>Country</p></div>
-                        </li>
-                        <li class="stats-list-row">
-                            <div>1</div>
-                            <div>Dakota Rice</div>
-                            <div>$36.738</div>
-                            <div>Niger</div>
-                        </li>
-                        <li class="stats-list-row">
-                            <div>1</div>
-                            <div>Dakota Rice</div>
-                            <div>$36.738</div>
-                            <div>Niger</div>
-                        </li>
-                        <li class="stats-list-row">
-                            <div>1</div>
-                            <div>Dakota Rice</div>
-                            <div>$36.738</div>
-                            <div>Niger</div>
-                        </li>
-                        <li class="stats-list-row">
-                            <div>1</div>
-                            <div>Dakota Rice</div>
-                            <div>$36.738</div>
-                            <div>Niger</div>
-                        </li>
-                    </ul>
+                <div class="answer-two">
+                    <p>Ответ 2</p>
+                </div>
+                <div class="answer-three">
+                    <p>Ответ 3</p>
+                </div>
+                <div class="answer-four">
+                    <p>Ответ 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div>
+                <img src="pic/logoType.png" alt="LOGO" class="mini-logo">
+            </div>
+            <div class="level">
+                <div class="level-title">
+                    <div class="number">№</div>
+                    <div class="correct"></div>
+                    <div class="money">Сумма</div>
+                </div>
+                <div class="level-15">
+                    <div class="number">15</div>
+                    <div class="correct"></div>
+                    <div class="money">1 000 000</div>
+                </div>
+                <div class="level-14">
+                    <div class="number">14</div>
+                    <div class="correct"></div>
+                    <div class="money">500 000</div>
+                </div>
+                <div class="level-13">
+                    <div class="number">13</div>
+                    <div class="correct"></div>
+                    <div class="money">250 000</div>
+                </div>
+                <div class="level-12">
+                    <div class="number">12</div>
+                    <div class="correct"></div>
+                    <div class="money">125 000</div>
+                </div>
+                <div class="level-11">
+                    <div class="number">11</div>
+                    <div class="correct"></div>
+                    <div class="money">64 000</div>
+                </div>
+                <div class="level-10">
+                    <div class="number">10</div>
+                    <div class="correct"></div>
+                    <div class="money">32 000</div>
+                </div>
+                <div class="level-9">
+                    <div class="number">9</div>
+                    <div class="correct"></div>
+                    <div class="money">16 000</div>
+                </div>
+                <div class="level-8">
+                    <div class="number">8</div>
+                    <div class="correct"></div>
+                    <div class="money">8 000</div>
+                </div>
+                <div class="level-7">
+                    <div class="number">7</div>
+                    <div class="correct"></div>
+                    <div class="money">4 000</div>
+                </div>
+                <div class="level-6">
+                    <div class="number">6</div>
+                    <div class="correct"></div>
+                    <div class="money">2 000</div>
+                </div>
+                <div class="level-5">
+                    <div class="number">5</div>
+                    <div class="correct"></div>
+                    <div class="money">1 000</div>
+                </div>
+                <div class="level-4">
+                    <div class="number">4</div>
+                    <div class="correct"></div>
+                    <div class="money">500</div>
+                </div>
+                <div class="level-3">
+                    <div class="number">3</div>
+                    <div class="correct"></div>
+                    <div class="money">300</div>
+                </div>
+                <div class="level-2">
+                    <div class="number">2</div>
+                    <div class="correct"></div>
+                    <div class="money">200</div>
+                </div>
+                <div class="level-1">
+                    <div class="number">1</div>
+                    <div class="correct"></div>
+                    <div class="money">100</div>
+                </div>
             </div>
         </div>
     </main>
-    <hr>
-    <footer>
-        <div>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">licenses</a></li>
-            </ul>
-        </div>
-        <p>2022 - made with love</p>
-    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
